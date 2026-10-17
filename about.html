@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О блоге - Тюмень на слуху</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Тюмень <span>на слуху</span></a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="places.html">Места</a></li>
+          <li><a href="food.html">Еда</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+          <li><a class="active" href="about.html">О блоге</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>О блоге и авторе</h1>
+        <p>«Тюмень на слуху» - учебный городской блог: собираю маршруты и места, которые удобно пройти за один день без машины.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <article class="about-card">
+          <h2 class="section-title">Зачем этот сайт</h2>
+          <p>Большинство гидов либо слишком официальные, либо превращаются в длинный список «обязательно посетить». Мне хотелось сделать короткие страницы с понятной логикой: куда идти, в каком порядке и где сделать паузу.</p>
+          <p>Контент написан от первого лица - так проще честно сказать, что стоит времени, а что можно пропустить, если день короткий.</p>
+          <h3>Как связаться</h3>
+          <address>
+            <p>
+              Email:
+              <a class="underline-link" href="mailto:hello@tyumen-nasluchu.example">hello@tyumen-nasluchu.example</a>
+            </p> 
+          </address>
+        </article>
+
+        <div class="about-card">
+          <h2 class="section-title">Написать в блог</h2>
+          <form class="contact-form" action="#" method="get">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="topic">Тема</label>
+              <select id="topic" name="topic">
+                <option value="place">Предложить место</option>
+                <option value="route">Идея маршрута</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" placeholder="Кратко опишите идею или вопрос" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+            <p class="form-note">*тестовая форма без сервера.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Тюмень на слуху</h3>
+        <p>Городской блог о прогулках, местах и маршрутах.</p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="places.html">Места</a></li>
+          <li><a href="food.html">Еда</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <ul>
+          <li><a class="underline-link" href="mailto:hello@tyumen-nasluchu.example">hello@tyumen-nasluchu.example</a></li>
+          <li><a class="underline-link" href="about.html">О блоге</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© 2026 Тюмень на слуху. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

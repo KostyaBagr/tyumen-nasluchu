@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Еда и звуки - Тюмень на слуху</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Тюмень <span>на слуху</span></a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="places.html">Места</a></li>
+          <li><a class="active" href="food.html">Еда</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+          <li><a href="about.html">О блоге</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Еда, кофе и звук города</h1>
+        <p>Не рейтинг ресторанов, а понятные остановки по пути: завтрак, перекус, кофе с собой - плюс видео и короткий саундтрек для прогулки.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container food-list">
+        <article class="food-item">
+          <div class="food-num">01</div>
+          <div>
+            <h3>Завтрак без спешки</h3>
+            <p>Ищите места рядом с Цветным бульваром или Республикой: там удобно начать день и сразу уйти гулять. Смотрите на окна, если светло и не пусто в будни утром, обычно хороший знак.</p>
+          </div>
+        </article>
+        <article class="food-item">
+          <div class="food-num">02</div>
+          <div>
+            <h3>Обед «между точками»</h3>
+            <p>Между Исторической площадью и набережной удобны небольшие кафе и столовые - не нужно уезжать в другой район ради одного блюда.</p>
+          </div>
+        </article>
+        <article class="food-item">
+          <div class="food-num">03</div>
+          <div>
+            <h3>Кофе с собой к реке</h3>
+            <p>Лучший сценарий: взять стакан и дойти до нижнего яруса набережной. Вечером так приятнее, чем сидеть в помещении.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="section-title">Видео: город с высоты прогулки</h2>
+        <p class="section-lead">Короткий обзор локаций Тюмени - набережная, центр, Мост Влюблённых. Удобно посмотреть перед поездкой.</p>
+        <div class="media-block">
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/LAcdP-x4Im4"
+              title="Обзор Тюмени: места и прогулки"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <div>
+            <h3>Зачем смотреть</h3>
+            <p>Ролик помогает сориентироваться в масштабе центра: понять, что всё нужное действительно рядом, и не строить маршрут «через весь город».</p>
+            <p>После просмотра откройте <a href="routes.html">маршрут на день</a> - там те же точки на карте.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Саундтрек прогулки</h2>
+        <p class="section-lead">Ambient-трек для наушников, пока идёте вдоль Туры.</p>
+        <div class="audio-box">
+          <div class="audio-pulse" aria-hidden="true">▶</div>
+          <h3>Deep Sea - саундтрек прогулки</h3>
+          <p>Спокойный фон без слов. Громкость лучше чуть ниже обычной - чтобы слышать город.</p>
+          <audio controls preload="metadata">
+            <source src="audio/marmixer-deep-sea-324392.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудиоэлемент.
+          </audio>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Тюмень на слуху</h3>
+        <p>Городской блог о прогулках, местах и маршрутах.</p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="places.html">Места</a></li>
+          <li><a href="food.html">Еда</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <ul>
+          <li><a href="mailto:hello@tyumen-nasluchu.example">hello@tyumen-nasluchu.example</a></li>
+          <li><a href="about.html">О блоге</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© 2026 Тюмень на слуху. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

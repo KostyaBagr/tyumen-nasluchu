@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маршруты - Тюмень на слуху</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Тюмень <span>на слуху</span></a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="places.html">Места</a></li>
+          <li><a href="food.html">Еда</a></li>
+          <li><a class="active" href="routes.html">Маршруты</a></li>
+          <li><a href="about.html">О блоге</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Пеший день по центру</h1>
+        <p>Один маршрут без транспорта: около 3-4 часов с паузами на кофе и фото. Карта справа (на телефоне - ниже) показывает район набережной и центра Тюмени.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container routes-layout">
+        <div>
+          <h2 class="section-title">Точки маршрута</h2>
+          <ol class="route-steps">
+            <li>
+              <h3>Историческая площадь</h3>
+              <p>Старт у истоков города. Сделайте круг по ближайшим улицам - деревянная застройка задаёт тон.</p>
+            </li>
+            <li>
+              <h3>Цветной бульвар</h3>
+              <p>Короткая пауза у фонтана. Здесь удобно решить, идёте ли сразу к реке или заглянете за кофе.</p>
+            </li>
+            <li>
+              <h3>Сквер сибирских кошек</h3>
+              <p>Небольшая петля - 10-15 минут. Хорошо «разбавляет» маршрут между большими локациями.</p>
+            </li>
+            <li>
+              <h3>Мост Влюблённых</h3>
+              <p>Переход через Туру и вид на оба берега. Лучшее время - ближе к закату.</p>
+            </li>
+            <li>
+              <h3>Набережная Туры</h3>
+              <p>Финиш: спуститесь на нижний ярус, пройдите вдоль воды и закончите вечер без плана.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="section-title">Карта района</h2>
+          <div class="map-wrap">
+            <!-- Яндекс.Карта: центр - набережная / центр Тюмени, можно масштабировать и двигать -->
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=65.534300%2C57.153200&z=15&l=map&pt=65.534300,57.153200,pm2rdm"
+              title="Интерактивная карта: набережная Тюмени"
+              allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <p class="map-caption">Маркер - район набережной реки Туры (Тюмень). Карту можно двигать и масштабировать.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="section-title">Практические заметки</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-body">
+              <h3>Обувь</h3>
+              <p>Много лестниц на набережной - удобнее кроссовки, не новые туфли.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Сезон</h3>
+              <p>Летом маршрут длиннее: можно добавить верхние ярусы. Зимой держитесь ближе к освещённым зонам.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Еда по пути</h3>
+              <p>Подсказки по остановкам - на странице <a class="card-link" href="food.html">«Еда»</a>.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Тюмень на слуху</h3>
+        <p>Городской блог о прогулках, местах и маршрутах.</p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="places.html">Места</a></li>
+          <li><a href="food.html">Еда</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <ul>
+          <li><a href="mailto:hello@tyumen-nasluchu.example">hello@tyumen-nasluchu.example</a></li>
+          <li><a href="about.html">О блоге</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© 2026 Тюмень на слуху. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
